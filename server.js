@@ -1,7 +1,10 @@
+console.log('1');
 const express = require("express");
+console.log('2');
 const path = require("path");
+console.log("3");
 const app = express();
-
+console.log(`4`);
 const configs = {
     caminho: "build", //Aqui será definido a pasta de saída onde contém o index.html e os outros arquivos.
     forcarHTTPS: false, //Defina para true se desejar que o redirecionamento para HTTPS seja forçado (é necessário certificado SSL ativo)
