@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Switch, Route,} from 'react-router-dom';
+import { Switch, Route,} from 'react-router-dom';
 import Contato from './pages/contato';
 import Inicio from './pages/inicio';
 import Sorteio from './pages/sorteio';
@@ -10,7 +10,6 @@ import CriarSorteio from './pages/criarsorteio'
 
 const Routes = () =>{
     return(
-        <BrowserRouter>
             <Switch>
                 <Route exact path="/" component={Inicio}/>
                 <Route path="/contato" component={Contato}/>
@@ -20,7 +19,6 @@ const Routes = () =>{
                 <Route path="/sorteios" component={Sorteios}/>
                 <Route path="/:id" component={Sorteio}/>
             </Switch>
-        </BrowserRouter>
     );
 }
 

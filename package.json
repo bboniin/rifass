@@ -2,9 +2,7 @@
   "name": "sitedepesquisa",
   "version": "0.1.0",
   "private": true,
-  "main": "app.js",
   "scripts": {
-    "postinstall": "npm run build",
     "start": "node server",
     "build": "react-scripts build",
     "test": "react-scripts test",

@@ -6,12 +6,15 @@ import Footer from './pages/footer';
 import Routes from './routes';
 import Header from './pages/header';
 
+import { BrowserRouter } from 'react-router-dom';
 ReactDOM.render(
-  <React.StrictMode>
-    <Header/>
-    <Routes/>
-    <Footer/>
-  </React.StrictMode>,
+  <BrowserRouter>
+    <React.StrictMode>
+      <Header/>
+      <Routes/>
+      <Footer/>
+    </React.StrictMode>
+  </BrowserRouter>,
   document.getElementById('root')
 );
 
